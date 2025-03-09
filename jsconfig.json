@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@styles/*": [
+        "./src/assets/styles/*"
+      ],
     }
   },
   "exclude": ["node_modules", "dist"]

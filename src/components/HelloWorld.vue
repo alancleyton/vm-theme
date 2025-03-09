@@ -12,7 +12,7 @@ defineProps({
     <h1 class="green">
       {{ msg }}
     </h1>
-    <h3>
+    <h3 class="bg-primary">
       You’ve successfully created a project with
       <a
         href="https://vite.dev/"
