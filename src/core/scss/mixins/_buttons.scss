@@ -1,0 +1,57 @@
+// Mixins for button variants
+
+@use '../variables' as *;
+
+/**
+ * Mixin to define styles for filled button variants.
+ * 
+ * @param {Color} $variant-color - Color of the button variant.
+ * 
+ * Button will have a background and border color matching the variant color.
+ */
+@mixin button-variant($variant-color) {
+  $variant-color-darken: darken($variant-color, 10%);
+  $variant-color-lighten: lighten($variant-color, 10%);
+
+  color: $white !important; // ensure white color to info and warning variants
+  background-color: $variant-color;
+  border-color: $variant-color;
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    border-color: $variant-color-lighten;
+    background-color: $variant-color-lighten;
+  }
+
+  &:active:not(:disabled) {
+    border-color: $variant-color-darken;
+    background-color: $variant-color-darken;
+  }
+}
+
+/**
+ * Mixin to define styles for outlined button variants.
+ * 
+ * @param {Color} $variant-color - Color of the button variant.
+ * 
+ * The button will have a transparent background and text color matching the variant.
+ */
+@mixin button-outline-variant($variant-color) {
+  $variant-color-darken: darken($variant-color, 10%);
+
+  background-color: transparent;
+  color: $variant-color;
+  border-color: $variant-color;
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    background-color: $variant-color;
+    border-color: $variant-color;
+    color: $white;
+  }
+
+  &:active:not(:disabled) {
+    border-color: $variant-color-darken;
+    background-color: $variant-color-darken;
+  }
+}

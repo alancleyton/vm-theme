@@ -4,7 +4,7 @@
 $crimson: #d81a67;
 $teal:    #426b83;
 $green:   #6fcf97;
-$red:     #C92A2A;
+$red:     #fa5252;
 $yellow:  #dfa25b;
 $cyan:    #5da1a9;
 
@@ -67,3 +67,23 @@ $neutral-colors: (
   'gray-8':  $gray-8,
   'gray-9':  $gray-9,
 );
+
+/**
+* Typography
+* Font, line-height, and color for body text, headings, and more.
+*/
+
+// Fonts
+$font-family-inter:      'Inter', sans-serif;
+$font-family-sans-serif: 'Public Sans', sans-serif;
+$font-family-base:       $font-family-sans-serif;
+
+// Font weight
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+$font-weight-base: $font-weight-normal;

@@ -1,3 +1,11 @@
+/*
+* VM's theme
+* This theme is based on Bootstrap and overrides Bootstrap's default classes.
+*/
+
 // Configuration
-@import 'variables';
-@import 'fonts';
+@use 'variables' as *;
+@use 'fonts' as *;
+
+// Components
+@use 'buttons' as *;

@@ -1,6 +1,2 @@
 // core theme with bootstrap overrides
-@import '../../core/scss';
-
-.bg-primary {
-  background-color: $primary-color !important;
-}
+@use '../../core/scss' as *;
